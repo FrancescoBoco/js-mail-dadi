@@ -30,6 +30,7 @@ const emailCheck = [
 
 
 const form = document.getElementById('email-form');
+const email = document.getElementById('mail').value
 
 form.addEventListener('submit',
     function(event) {
@@ -38,12 +39,27 @@ form.addEventListener('submit',
         console.log('Form sottomesso');
 
         for (let i = 0; i < emailCheck.length; i++) {
-            console.log('-', emailCheck[i]);
-            
+            // console.log('-', emailCheck[i]);
+        if(email == emailCheck[i]) {
+            console.log('corretto')}
+            else {
+                console.log('non corretto ')
+            }
         }
+    });
+
+            // Corretto
+        // for (let i = 0; i < emailCheck.length; i++) {
+        //     console.log('-', emailCheck[i]);
+
+        //     if (LA MAIL DELLUTENTE E UGUALE AL ARRY )
+        //     SCRIVI PUOI PROSEGUIRE 
+        //     else (LA MAIL DELLUTENTE NON E UGUALE AL ARRY )
+        //     SCRIVI NON PUOI  PROSEGUIR
+        // }
 
     
-     });
+    
     
 
 
