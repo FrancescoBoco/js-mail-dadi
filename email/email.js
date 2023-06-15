@@ -20,11 +20,9 @@ stampa un messaggio appropriato sull'esito del controllo.
 const emailCheck = [ 
     "Alessandro.Ebreo@gmail.com",
     "Alessandro.Mungai@gmail.com",
-    "Alessandro.Mungai@gmail.com",
-    "Alessandro.Mungai@gmail.com",
-    "Alessandro.Mungai@gmail.com",
-    "Alessandro.Mungai@gmail.com",
-    "Alessandro.Mungai@gmail.com",
+    "Alessio.Vietri@gmail.com",
+    "Francesco.Boco@gmail.com",
+
 ]  
  
 
@@ -38,15 +36,34 @@ form.addEventListener('submit',
 
         console.log('Form sottomesso');
 
+        // let emailValida = false
+
         for (let i = 0; i < emailCheck.length; i++) {
-            // console.log('-', emailCheck[i]);
+            console.log('-',typeof emailCheck[i],  );
+            
         if(email == emailCheck[i]) {
-            console.log('corretto')}
-            else {
-                console.log('non corretto ')
-            }
+            console.log('ciao', typeof email, typeof emailCheck[i] )
+           // Ferma il ciclo
         }
+        
+
+            // if (emailValida = true){
+            //     console.log('email valida')
+            // }
+
+            // else {
+            //     console.log('emial non valida')
+            // }
+        }
+        // const newDiv = document.createElement('div');
+        // newDiv.append(emailCheck[i]);
+
+        // document.getElementById('risposta').append(newDiv);
+
+        
     });
+
+   
 
             // Corretto
         // for (let i = 0; i < emailCheck.length; i++) {
