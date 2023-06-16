@@ -68,7 +68,7 @@ let dado1 =  document.getElementById('dado1').value
  const valoreDado1 = document.getElementById('dado1').value
 // console.log ('tipi' ,typeof dado1, typeof dado 2)
 
-
-if (valoreDado1 > 2 ) {
-    console.log ('happy')
-}
+// NON ENTRA NEMMENO NELL'OPERATORE LOGICO... 
+// if (valoreDado1 > 2 ) {
+//     console.log ('happy')
+// }
