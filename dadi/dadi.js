@@ -10,7 +10,13 @@ function getRandomInt(max) {
 
   console.log(getRandomInt(7));
 // A DADO GLI DO' L'ATTRIVUTO NUMERO RANDOM  CON L'ID DADO1
-  let dado = `<h1 id="dado1" > ${getRandomInt(7)} </h1>`
+  let dado = `
+    <h1 id="dado1" >
+        ${getRandomInt(7)} 
+        <div> umano </div>
+    </h1>
+
+    `
 
 
 /*
@@ -18,7 +24,13 @@ function getRandomInt(max) {
 */
   
 // A DADO GLI DO' L'ATTRIVUTO NUMERO RANDOM  CON L'ID DADOW
-let secondoDado = `<h1 id="dado2"> ${getRandomInt(7)} </h1>`
+let secondoDado = `
+<h1 id="dado2"> 
+    ${getRandomInt(7)} 
+    <div>
+    robot
+    </div>
+</h1>`
 
 
 /*
@@ -46,9 +58,17 @@ let dado1 =  document.getElementById('dado1').value
  // METTO DENTRO LA VARIABILE DADO 2 IL VALORE DI DADO, SAREBBE IL NUMERO RANDOMNICO 
  let dado2 =  document.getElementById('dado1').value
 
-console.log ('tipi' ,typeof dado1, typeof dado 2)
 
 
-// if ( ) {
-//     console ('vince umano')
-// }
+
+
+
+
+
+ const valoreDado1 = document.getElementById('dado1').value
+// console.log ('tipi' ,typeof dado1, typeof dado 2)
+
+
+if (valoreDado1 > 2 ) {
+    console.log ('happy')
+}

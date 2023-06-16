@@ -14,3 +14,35 @@
 }
 
 /* GENERAL */
+
+main{
+    background-color: aquamarine;
+    height: 100vh;
+}
+.container{
+    display: flex;
+
+}
+
+
+
+#form{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#umano{
+    padding: 10px;
+    border: 1px solid black;
+    margin-right: 5px;
+    
+}
+
+
+#robot{
+    padding: 10px;
+    border: 1px solid black;
+
+    
+}
